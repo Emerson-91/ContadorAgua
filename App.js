@@ -12,7 +12,7 @@ export default class ContadorAgua extends Component {
   }
   atualizar(){
     let s = this.state;
-    s.pct = ((s.consumido /2000)*100);
+    s.pct = ((s.consumido /2000)*100).toFixed(0);
 
     if(s.pct >= 100){
       s.status = 'Bom';
